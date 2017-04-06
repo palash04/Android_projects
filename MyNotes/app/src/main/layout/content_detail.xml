@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kamble.palash.mynotes.DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:orientation="horizontal"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardElevation="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/headingSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:padding="15dp"
+                    android:textSize="20dp"
+                    android:textColor="#5e35b1"
+                    android:text="Update note"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/updateBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:src="@drawable/checkbox" />
+                <ImageView
+                    android:id="@+id/deleteBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:src="@android:drawable/ic_menu_delete" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/titleEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headingSave"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="Title"
+                android:inputType="textCapWords|textNoSuggestions"
+                android:maxLength="50"
+                android:fontFamily="serif"
+                android:paddingLeft="20dp"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/noteEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleEditTxt"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="top|left"
+                android:hint="Your note"
+                android:inputType="textMultiLine|textCapSentences|textNoSuggestions"
+                android:lines="10"
+                android:maxLength="2000"
+                android:maxLines="20"
+                android:fontFamily="sans-serif-condensed"
+                android:minLines="10"
+                android:background="@android:color/transparent"
+                android:paddingLeft="20dp"
+                android:scrollbars="vertical"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
+
+
