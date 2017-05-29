@@ -1,7 +1,8 @@
 <h1>Basic android app using firebase as a backend service</h1>
 <br/>
-<strong>Step 1</strong> -<br/> 
-$nbsp;$nbsp;	Create a project in firebase console.<br/>
+<strong>Step 1</strong> -<br/>
+<p>
+<style>{ padding-left: 1.8em }</style>Create a project in firebase console.<br/>
 	Add firebase to android app<br/> 
 	Register app - Download config file - Move the json file in app directory of the app in android studio.<br/> 
 	Add dependencies to your app<br/> 
@@ -12,6 +13,7 @@ $nbsp;$nbsp;	Create a project in firebase console.<br/>
 			// Add to the bottom of the file<br/> 
 			apply plugin: 'com.google.gms.google-services'<br/> 
 		3.Sync the project<br/> 
+</p>
 Step 2 - <br/> 
 	Add the libraries for various firebase features.<br/> 
 	Here, I am gonna add the gradle dependency line for realtime database<br/> 
