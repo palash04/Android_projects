@@ -1,7 +1,7 @@
 <h1>Basic android app using firebase as a backend service</h1>
 <br/>
 <strong>Step 1</strong> -<br/>
-	$nbsp;Create a project in firebase console.<br/>
+	Create a project in firebase console.<br/>
 	Add firebase to android app<br/> 
 	Register app - Download config file - Move the json file in app directory of the app in android studio.<br/> 
 	Add dependencies to your app<br/> 
