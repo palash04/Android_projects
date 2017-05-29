@@ -1,7 +1,7 @@
-#Basic android app using firebase as a backend service
-
-Step 1 - 
-	Create a project in firebase console.
+<h1>Basic android app using firebase as a backend service<h1/><br/>
+<br/>
+Step 1 -<br/> 
+	Create a project in firebase console.<br/>
 	Add firebase to android app
 	Register app - Download config file - Move the json file in app directory of the app in android studio.
 	Add dependencies to your app
@@ -17,4 +17,4 @@ Step 2 -
 	Here, I am gonna add the gradle dependency line for realtime database
 	// Add the following 
 	compile 'com.google.firebase:firebase-database:10.2.6'
-	<a href="https://firebase.google.com/docs/android/setup">Link for firebase documentation <a />
+	<a target="_blank" href="https://firebase.google.com/docs/android/setup">Link for firebase documentation <a />
